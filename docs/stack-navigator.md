@@ -14,18 +14,18 @@ To use this navigator, you need to install [`@react-navigation/stack`](https://g
 yarn add @react-navigation/native@next @react-navigation/stack@next @react-native-community/masked-view
 ```
 
-Now we need to install [`react-native-gesture-handler`](https://github.com/kmagiera/react-native-gesture-handler), [`react-native-reanimated`](https://github.com/kmagiera/react-native-reanimated), [`react-native-screens`](https://github.com/kmagiera/react-native-screens) and [`react-native-safe-area-context`](https://github.com/th3rdwave/react-native-safe-area-context).
+Now we need to install [`react-native-gesture-handler`](https://github.com/kmagiera/react-native-gesture-handler), [`react-native-reanimated`](https://github.com/kmagiera/react-native-reanimated) and [`react-native-safe-area-context`](https://github.com/th3rdwave/react-native-safe-area-context).
 
 If you are using Expo, to ensure that you get the compatible versions of the libraries, run:
 
 ```sh
-expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+expo install react-native-gesture-handler react-native-reanimated react-native-safe-area-context
 ```
 
 If you are not using Expo, run the following:
 
 ```sh
-yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23 react-native-safe-area-context
+yarn add react-native-reanimated react-native-gesture-handler react-native-safe-area-context
 ```
 
 If you are using Expo, you are done. Otherwise, continue to the next steps.
@@ -36,13 +36,6 @@ To complete the linking on iOS, make sure you have [Cocoapods](https://cocoapods
 cd ios
 pod install
 cd ..
-```
-
-To finalize installation of `react-native-screens` for Android, add the following two lines to `dependencies` section in `android/app/build.gradle`:
-
-```gradle
-implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
-implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 ```
 
 To finalize installation of `react-native-gesture-handler` for Android, be sure to make the necessary modifications to `MainActivity.java`:
